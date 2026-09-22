@@ -22,6 +22,8 @@ to the underlying records rather than being invented.
 The goal was to make account planning feel like reviewing a draft rather than
 staring at a blank page.
 
+![An account plan page showing spend metrics, a pipeline chart, and a strategic summary broken into why now, what changes, main risk, and next decision](assets/account-plan.png)
+
 **How I built it:** custom components and server side code on the Salesforce
 platform, with the platform's own generative features doing the drafting. I built
 it in Cursor in agent mode, with a set of custom Rules that kept every deployment
@@ -35,6 +37,8 @@ A small single page site about my background and how I tend to approach a proble
 Rather than making someone read the whole thing, it has an assistant built in.
 You can ask it a question in your own words and it answers from what's on the
 page, so you can skip to whatever you actually care about.
+
+<img src="assets/personal-site.png" alt="The opening of the site, with a portrait and the line: There's no playbook. I build the team that writes it." width="420">
 
 **How I built it:** a React and TypeScript site with Tailwind for styling, and a
 small backend route that passes questions to a language model with my own writing
@@ -54,6 +58,8 @@ it stays under the presenter's control.
 
 It includes generated voice narration so the conversation can be followed without
 reading the screen.
+
+![The presenter control panel on the left with channel, ambience, and run of show controls, and the simulated phone conversation playing on the right](assets/conversation-demo.jpg)
 
 **How I built it:** a small Node and Express app serving a front end I wrote by
 hand, plus a script that turns the script text into narration audio. The timing of

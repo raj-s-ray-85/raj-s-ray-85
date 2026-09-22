@@ -1,10 +1,10 @@
 # Hi, I'm Raj
 
-I work in enterprise software, mostly at the point where a customer problem meets
-a working prototype. I tend to learn a product by building something real with it,
-so most of what I make starts as a question I could not answer with a slide.
+I'm a Solution Engineer at Salesforce, and I build almost everything in Cursor.
+I tend to learn a product by building something real with it, so most of what I
+make starts as a question I couldn't answer with a slide.
 
-Below is a plain language summary of what I have been building lately.
+Here's what I've been working on lately.
 
 ## Account planning assistant
 
@@ -22,25 +22,32 @@ to the underlying records rather than being invented.
 The goal was to make account planning feel like reviewing a draft rather than
 staring at a blank page.
 
-## Onboarding microsite
+**How I built it:** custom components and server side code on the Salesforce
+platform, with the platform's own generative features doing the drafting. I built
+it in Cursor in agent mode, with a set of custom Rules that kept every deployment
+scoped to one component at a time, so an agent couldn't quietly flatten the work
+I'd done by hand in the UI.
 
-A small single page site I built to introduce myself when joining a new team.
+## Personal site with a built in assistant
 
-It lays out a first twelve weeks in plain terms: what I plan to learn, in what
-order, what I expect to deliver along the way, and how I would like the result to
-be judged. There is a short video, a visual of the journey, and a section on how
-success gets measured.
+A small single page site about my background and how I tend to approach a problem.
 
-It also has a conversational assistant built in, so rather than reading the whole
-page, someone can just ask it a question and get an answer drawn from the content.
+Rather than making someone read the whole thing, it has an assistant built in.
+You can ask it a question in your own words and it answers from what's on the
+page, so you can skip to whatever you actually care about.
+
+**How I built it:** a React and TypeScript site with Tailwind for styling, and a
+small backend route that passes questions to a language model with my own writing
+as the context. I built it in Cursor by describing the section I wanted and then
+going back and forth on the result until it read the way I'd say it out loud.
 
 ## Interactive conversation demo
 
-A stage ready demo built for a live audience presentation.
+A stage-ready demo built for a live audience presentation.
 
 It simulates a messaging based shopping assistant, the kind of thing a shopper
 would use in a chat app, and plays the exchange out in real time on screen. The
-point was that a recorded video cannot be paused, redirected, or taken at a
+point was that a recorded video can't be paused, redirected, or taken at a
 different pace in front of a room, and a live system on conference wifi is a risk
 nobody needs. This sits in between: it looks and behaves like the real thing and
 it stays under the presenter's control.
@@ -48,11 +55,16 @@ it stays under the presenter's control.
 It includes generated voice narration so the conversation can be followed without
 reading the screen.
 
+**How I built it:** a small Node and Express app serving a front end I wrote by
+hand, plus a script that turns the script text into narration audio. The timing of
+the conversation and the look of it were separate enough that I could keep Cursor
+agents working on the two in parallel without them colliding.
+
 ## A note on the code
 
 The code for these projects is private. The work was done in a professional
-context, so the implementation details, the data, and the client specifics are not
+context, so the implementation details, the data, and the client specifics aren't
 mine to publish, which is why the descriptions above stay general.
 
-That said, I am happy to walk through any of it. If you want to see how something
-was built or why it was built that way, just reach out and I will give you a tour.
+That said, I'm happy to walk through any of it. If you want to see how something
+was built or why it was built that way, just reach out and I'll give you a tour.

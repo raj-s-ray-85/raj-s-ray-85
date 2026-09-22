@@ -49,9 +49,10 @@ going back and forth on the result until it read the way I'd say it out loud.
 
 A stage-ready demo built for a live audience presentation.
 
-It simulates a messaging based shopping assistant, the kind of thing a shopper
-would use in a chat app, and plays the exchange out in real time on screen. The
-point was that a recorded video can't be paused, redirected, or taken at a
+It simulates a customer service assistant in a messaging app, the kind that
+handles where is my order, time to reorder, and here's your confirmation, and
+plays the exchange out in real time on screen. The point was that a recorded
+video can't be paused, redirected, or taken at a
 different pace in front of a room, and a live system on conference wifi is a risk
 nobody needs. This sits in between: it looks and behaves like the real thing and
 it stays under the presenter's control.
@@ -59,7 +60,7 @@ it stays under the presenter's control.
 It includes generated voice narration so the conversation can be followed without
 reading the screen.
 
-![The presenter control panel on the left with channel, ambience, and run of show controls, and the simulated phone conversation playing on the right](assets/conversation-demo.jpg)
+![The presenter control panel on the left with channel, ambience, and run of show controls, and the simulated service conversation playing out on a phone on the right](assets/conversation-demo.jpg)
 
 **How I built it:** a small Node and Express app serving a front end I wrote by
 hand, plus a script that turns the script text into narration audio. The timing of
